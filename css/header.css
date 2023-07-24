@@ -1,0 +1,225 @@
+.header{
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid var(--grey-2);
+    z-index: 900;
+    
+}
+
+.header .container,
+.header .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*  se alinham aos cantos */
+}
+
+.header .logo{
+    display: block;
+    margin: 0 40px 0 20px;
+}
+
+.header .logo img{
+    width: 100%;
+    max-width: 150px;
+}
+
+/* HAMBURGUER */
+
+.header .hamburguer{
+    display: block;
+    background: none;
+    border: 0;
+    outline: none;
+}
+
+.hamburguer span{
+    margin: 4px 0 4px;
+}
+
+.header .hamburguer:before,
+.header .hamburguer:after{
+    content: "";
+}
+
+.header .hamburguer span,
+.header .hamburguer:before,
+.header .hamburguer:after{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--blue);
+}
+/* NAV */
+.header .nav-menu{
+    display: block;
+}
+.header .nav-menu .menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav-menu .menu li {
+    float:left ;
+}
+
+.header .nav-menu .menu li a{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.header .nav-menu .menu li:first-child a{
+    margin-left: 0;
+}
+
+.header .nav-menu .menu li a{
+    opacity: .8;
+ }
+.header .nav-menu .menu li .orange{
+   color: var(--orange);
+}
+
+.header .nav-menu .menu li .green{
+    color: var(--green);
+ }
+
+ .header .nav-menu .menu li .pink{
+    color: var(--pink);
+ }
+
+ .header .nav-menu .menu li .yellow{
+    color: var(--yellow);
+ }
+
+ .header .nav-menu .menu li .grey{
+    color: var(--grey);
+ }
+
+/*  LIST HEADER */
+
+.header .list-header{
+    display: flex;
+    align-items: baseline;
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ficarão na mesma linha um ao lado do outro */
+
+.header .list-header li{
+    position: relative;
+    float: left;
+    margin-right: 12px;
+}
+
+.header .list-header li button{
+    background: none;
+    border: 0;
+    color: var(--grey-2);
+    text-transform: uppercase;
+    opacity: .5;
+}
+.header .list-header li button .bi{
+    margin-left: 10px;
+    font-size: var(--text-md);
+}
+
+.header .list-header li:nth-child(3) .bi{
+    font-size: 22px;
+}
+
+
+/* ficarão na mesma linha um ao lado do outro */
+.header .list-header  li .box-mail{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 160px;
+    background-color: var(--color-1);
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .2);
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.header .list-header li:hover .box-mail{
+    opacity: 1;
+    visibility: visible;
+    top: 40%;
+
+}
+
+.header .list-header li .box-mail:before{
+    position: absolute;
+    top: -15;
+    left: 15;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid var(--color-1);
+
+}
+
+.header .list-header li .box-mail a{
+    display: block;
+    color: var(--grey);
+    font-weight: 700;
+    font-size: var(--text-md);
+    padding: 10px;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.header .list-header li .box-glob-products {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 320px;
+    transform: translate(5%);
+    background-color: var(--color-1);
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .2);
+    border-top: 2px solid var(--color-1);
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}
+.header .list-header li:hover .box-glob-products{
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+
+}
+.header .list-header li .box-glob-products  img {
+    width: 300px;
+    height: 150px;
+}
+.header .list-header li .box-glob-products  h4 {
+    position: block;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--blue);
+    font-size: var(--text-md);
+    text-transform: uppercase;
+
+}
+
+.header .list-header li .box-glob-products  .btn {
+    margin: 20px auto 0;
+
+}
+
+.header .list-header li .box-mail a:hover{
+    background-color: var(--color-1);
+    color: var(--grey-2);
+   
+}

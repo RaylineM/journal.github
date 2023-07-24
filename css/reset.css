@@ -1,0 +1,89 @@
+
+/* criando as variaveis de cores  */
+
+:root{
+    --color-1:#fff;
+    --color-2:#141414;
+
+    --orange:#f03018;
+    --green:#06aa48;
+    --yellow:#ec7d00;
+    --pink:#fb0234;
+    --grey:#333333;
+    --blue:#0669DE;
+    --grey-2:#777;
+    --whit:#eee !important;
+    --red:hwb(0 5% 33% / 0.959) !important;
+    --grey-3:#817f7f;
+
+/* font */
+
+-font : 'Open Sans', sans-serif!important;
+
+/* Sizes */
+
+--text :14px;
+--text-md :16px;
+--tit-lg :38px;
+--tit-md :24px;
+--text-sm :18px;
+
+--font-xl :36px;
+
+/* trasitions  */
+
+--transition: ease-in-out .4s;
+
+  
+}
+/* colocando a fonte na página  */
+body{
+    font-family:var(--font);
+    background-color: var(--color-1);
+    font-size: var(--text);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.orange{color : var(--orange);}
+.green {color : var(--gren);}
+.yellow{color : var(--yellow);}
+.pink{color : var(--pink);}
+.grey{color : var(--grey);}
+.blue{color : var(--blue);}
+.red {color :var(--red);}
+.grey-3{color :var(  --grey-3);}
+
+
+.btn{
+    display: block;
+    width: 100%;
+    max-width: max-content;
+    background-color: var(--blue);
+    color: var(--color-1);
+    border-radius: 4px;
+    padding: 8px 30px;
+    transition: var(--transition);
+    font-size: var(--text);
+}
+
+
+.btn:hover{
+    color: var(--color-1);
+    opacity: 0.7;
+}
+.destaque .col-lg-6{
+    position: relative;
+}
+.destaque .col-lg-6::after{
+    position: relative;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--whit);
+    top: 0;
+    right: 15px;
+}

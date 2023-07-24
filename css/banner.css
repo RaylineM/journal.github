@@ -1,0 +1,11 @@
+.box-banner{
+    width: 100%;
+    background-color: var(--whit);
+    margin: 40px 0;
+    padding: 0 100px;
+}
+
+.box-banner img{
+    width: 50%;
+   margin-left: 250px;
+}
